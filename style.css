@@ -1,0 +1,42 @@
+html {
+    background: -moz-linear-gradient(top, #241d33 0%, #171930 51%, #091119 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #241d33), color-stop(51%, #171930), color-stop(100%, #091119));
+    background: -webkit-linear-gradient(top, #241d33 0%, #171930 51%, #091119 100%);
+    background: -o-linear-gradient(top, #241d33 0%, #171930 51%, #091119 100%);
+    background: -ms-linear-gradient(top, #241d33 0%, #171930 51%, #091119 100%);
+    background: linear-gradient(to bottom, #241d33 0%, #171930 51%, #091119 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#241d33', endColorstr='#091119', GradientType=0);
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+    height: 100%;
+  }
+  
+  #new-year {
+    position: relative;
+    top: 50%;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto 0 auto;
+    transform: translateY(-50%);
+  
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .stroke-fill {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    stroke: #efefef; /* Color directo en lugar de la variable */
+  }
+  
+  #happy-stroke {
+    animation: happy-dash 1.7s linear normal forwards;
+  }
+  
+  /* Resto del código de animaciones */
+  
